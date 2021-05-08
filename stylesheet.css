@@ -1,8 +1,28 @@
-.flexbox {
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
+
+.center-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 40px);
+}
+
+.bottom-box {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 body { 
